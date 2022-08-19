@@ -554,14 +554,17 @@
 				
 				
 				<div class="fn_cs_contact_form">
-					<form action="https://formsubmit.co/shivayukumar@gmail.com.com" method="post" class="contact_form" id="contact_form" autocomplete="off">
+					<form action="https://formsubmit.co/shivayukumar@gmail.com" method="post" class="contact_form" id="contact_form" autocomplete="off">
+						<input type="hidden" name="_subject" value="Mail From Website!">
+                    	<input type="hidden" name="_next" value="#contact">
+                    	<input type="hidden" name="_captcha" value="false">
 						<div class="input_list">
 							<ul>
 								<li>
-									<input id="name" type="text" placeholder="Your Name *" />
+									<input id="name" type="text" name="name" placeholder="Your Name *" />
 								</li>
 								<li>
-									<input id="email" type="text" placeholder="Your Email *" />
+									<input id="email" type="text" name="email" placeholder="Your Email *" />
 								</li>
 								<li>
 									<input id="tel" type="text" placeholder="Your Phone (optional)" />
@@ -570,14 +573,18 @@
 									<input id="subject" type="text" placeholder="Topic (optional)" />
 								</li>
 								<li class="full">
-									<textarea id="message" placeholder="Your Message *"></textarea>
+									<textarea id="message" name="message" placeholder="Your Message *"></textarea>
 								</li>
 								<li class="full">
 									<div class="mw300">
-										<a id="send_message" href="#" class="metaportal_fn_button full">
-											<span>Send Message</span>
-										</a>
+										
+										<button type="submit" class="metaportal_fn_button full" style="border-radius: 15px;"  value="click" onclick="alert('thanks for contacting')">
+											<a id="send_message" href="#" >
+												<span style="color: rgb(255, 255, 255);">Send Message</span>
+											</a>
+										</button>
 									</div>
+									
 									
 								</li>
 							</ul>
